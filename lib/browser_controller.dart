@@ -1,25 +1,4 @@
 import 'package:get/get.dart';
-
-// class BrowserController extends GetxController {
-//   var currentSearchEngine = 'https://www.google.com/search?q='.obs;
-//   var history = <String>[].obs;
-//   var progress = 0.0.obs;
-//
-//   void setSearchEngine(String engineUrl) {
-//     currentSearchEngine.value = engineUrl;
-//   }
-//
-//   void addToHistory(String url) {
-//     if (!history.contains(url)) {
-//       history.add(url);
-//     }
-//   }
-//
-//   void updateProgress(double newProgress) {
-//     progress.value = newProgress;
-//   }
-// }
-
 import 'package:get/get.dart';
 
 class BrowserController extends GetxController {
@@ -43,9 +22,6 @@ class BrowserController extends GetxController {
   }
 }
 
-
-
-
 class MenuController extends GetxController {
   var isMenuOpen = false.obs;
 
@@ -53,7 +29,6 @@ class MenuController extends GetxController {
     isMenuOpen.value = !isMenuOpen.value;
   }
 }
-
 
 class SearchEngineController extends GetxController {
   var selectedSearchEngine = 'Google'.obs;

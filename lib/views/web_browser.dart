@@ -132,27 +132,29 @@ void _handleMenuOption(int value) {
 //text form field
 Widget _buildSearchBar() {
   return
-    Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: TextField(
-        // controller: searchController,
-        decoration: InputDecoration(
-          hintText: 'Search or type URL...',
-          border: OutlineInputBorder(borderRadius: BorderRadius.circular(30)),
-        ),
-        onSubmitted: (query) {
-          if (query.isNotEmpty) {
-            // Check if the input is a URL or a search query
-            String url = query.startsWith('http')
-                ? query
-                : '${browserController.currentSearchEngine.value}${Uri.encodeComponent(query)}'; // Use encodeComponent to avoid invalid URL characters
+    Container(
+      color: Colors.black,
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: TextField(
+          // controller: searchController,
+          decoration: InputDecoration(
+            hintText: 'Search or type URL...',fillColor: Colors.white,
+            border: OutlineInputBorder(borderRadius: BorderRadius.circular(30)),
+          ),
+          onSubmitted: (query) {
+            if (query.isNotEmpty) {
+              String url = query.startsWith('http')
+                  ? query
+                  : '${browserController.currentSearchEngine.value}${Uri.encodeComponent(query)}'; // Use encodeComponent to avoid invalid URL characters
 
-            webViewController?.loadUrl(
-              urlRequest: URLRequest(url: WebUri.uri(Uri.parse(url))),
-            );
-            browserController.addToHistory(url);
-          }
-        },
+              webViewController?.loadUrl(
+                urlRequest: URLRequest(url: WebUri.uri(Uri.parse(url))),
+              );
+              browserController.addToHistory(url);
+            }
+          },
+        ),
       ),
     );
 }
@@ -179,9 +181,8 @@ Widget _buildWebView() {
       },
       onLoadError: (controller, url, code, message) {
         print("Load Error: $message"); // Print error message
-        // You can show a snackbar or alert dialog here to inform the user
       },
-      onLoadHttpError: (controller, url, statusCode, statusText) {
+     onLoadHttpError: (controller, url, statusCode, statusText) {
         print("HTTP Error: $statusCode, $statusText"); // Print HTTP error
         // Handle the HTTP error as needed
       },

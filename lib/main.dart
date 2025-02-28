@@ -13,7 +13,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(debugShowCheckedModeBanner: false,
-      // initialRoute: '/home2',
       getPages: [
         GetPage(name: '/', page: () => CustomWebBrowser(),),
       ],
