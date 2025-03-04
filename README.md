@@ -38,3 +38,14 @@ Browse the web, stay informed, and check your reflection—all from the same app
 
 Get your hands on Mirror Wall Browser App today—because looking good and staying connected should be effortless! 🌟🖤
 
+
+
+
+
+
+
+https://github.com/user-attachments/assets/b2dfbcd1-6a0d-4f6a-88bd-bcb345663fc8
+
+
+
+
