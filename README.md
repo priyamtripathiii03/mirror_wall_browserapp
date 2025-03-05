@@ -1,16 +1,6 @@
 # mirror_wall_browserapp
 
-A new Flutter project.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+Uploading mirror-wall-browserapp-web-browserdart-mirror-wall-browserapp-2025-03-05_S1qTClgr.mp4…
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
